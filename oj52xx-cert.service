@@ -1,0 +1,12 @@
+[Unit]
+Description=Install HP OfficeJet Cert
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/oj52xx-cert
+# Hardening
+PrivateTmp=yes
+ProtectSystem=full
+ProtectHome=read-only
