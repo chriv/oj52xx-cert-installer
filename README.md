@@ -54,7 +54,7 @@ This script **does not** issue certificates. It installs certificates that you h
     * Forces an immediate "Insecure" run to install the certificate (bypassing any existing expired/self-signed cert errors on the printer).
     * Installs the script to `/usr/local/bin/oj52xx-cert`.
     * Installs the config to `/etc/oj52xx-cert/config.env` with restricted permissions (0600).
-    * Enables a systemd timer to check/update the certificate daily.
+    * Enables a systemd timer to check/update the certificate weekly.
 
 ## Usage
 
